@@ -1,0 +1,119 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 31, 2017, 11:19:12 AM
+    Author     : MEia
+*/
+
+body{
+    font-family: "Tahoma";
+}
+
+#sketch-holder{
+    width: 400px;
+    height: 650px;
+    background-color: #333;
+    margin: auto;
+}
+#topo{
+    width: 400px;
+    height: 150px;
+}
+#topo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#instructions,#dificulty{
+    width: 400px;
+    height: 25px;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#home,#control{
+    width: 400px;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+#healthb{
+    width: 50%;
+    height: 25px;
+    float: left;
+}
+
+#harder{
+    width: 50%;
+    height: 25px;
+    float: left;
+}
+
+#start,#reset,#timer{
+    width: 33.33%;
+    height: 50px;
+    float: left;
+}
+
+#home:hover,#instructions:hover,#start:hover,#reset:hover,#harder:hover {
+    background-color: #555;
+    cursor: pointer; cursor: hand;
+}
+
+/*#instructions:hover #instructions2{    
+    visibility: visible;
+    opacity: 1;
+}*/
+
+#instructions2{
+    width: 400px;
+    color: #fff;
+    position: absolute;
+    font-size: 12px;
+    text-align: left;
+    background-color: #444; 
+    display: none;
+/*    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;*/
+}
+
+#instructions2 ul{
+    list-style:none;
+    padding-left:5px;
+}
+
+#score{
+    width: 400px;
+    height: 500px;
+    background-color: #333;
+    color: #fff;
+    display: block;
+}
+
+#scoreform{
+    width: 400px;
+    height: 150px;
+    padding-top: 50px;
+    text-align: center;
+    display: none;
+    
+}
+
+#highscore{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+#highscore table{
+    width: 400px;
+    text-align: center;
+    border: 1px solid #555;
+}

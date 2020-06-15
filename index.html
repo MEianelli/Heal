@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+	<title>HEAL</title>
+        <link rel="stylesheet" href="style.css"/>
+</head>
+<body oncontextmenu="return false;">
+    <div id="sketch-holder">
+        <div id="topo">
+            <a href='./'><div id="home">HOME</div></a>
+            <div id="dificulty">
+                <div id="healthb">#HEALTH BARS</div>
+                <div id="harder">HARDER ></div>
+            </div>
+            <div id="instructions">INSTRUCTIONS
+                <div id='instructions2'>
+                    <ul>
+                        <li>Don't let any health Bar get to ZERO.</li>
+                        <li>SURVIVE FOR 30 SECONDS</li>
+                        <li>Mouse Left click to Heal after some time (low mana)</li>
+                        <li>Mouse Right click to instant Heal on 2 random Bars (high mana)</li>
+                        <li>!!! AVOID OVER HEALING !!!</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="control">
+                <div id="start">PLAY</div>
+                <div id="reset">RESET</div>
+                <div id="timer"></div>
+            </div>
+        </div>
+        <div id='score'>
+            <div id='scoreform'>
+                <form method="POST">
+                    <input type="text" name="name" placeholder="Type your name"/>
+                    <br></br>
+                    <input id="overhealed" type="hidden" name="over"/>
+                    <input id="Healthbars" type="hidden" name="hb"/>
+                    <br></br>
+                    <input type="submit" value="Enter"/>
+                </form>
+            </div>
+            <div id='highscore'>
+                HIGHSCORES: 
+                <table>
+                    <tr>
+                        <td>NAME</td>
+                        <td>OVERHEAL</td>
+                        <td>#HEALTH BARS</td>
+                    </tr>
+                    <?php require('score.php');?>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="sketch.js"></script>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="p5.js"></script>
+    <script type="text/javascript" src="p5.sound.js"></script>
+    
+</body>
+</html> 
